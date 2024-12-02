@@ -53,6 +53,7 @@
     <string name="añospasados">Años pasados</string>
     <string name="mesespasados">Meses pasados</string>
     <string name="diaspasados">Días pasados</string>
+    <string name="button_text">Calcular Tiempo</string>
 
-    <string name="bottom_button_description">Bottom button</string>
+    <string name="bottom_button_description">Calcular</string>
 </resources>

@@ -38,8 +38,6 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Apply a color filter to the ImageButton
-        binding.bottom.setColorFilter(ContextCompat.getColor(requireContext(), R.color.black))
 
         binding.bottom.setOnClickListener{
             calculateAge()
@@ -57,6 +55,16 @@ class FirstFragment : Fragment() {
             return
         }
 
+        if (month !in 1..12) {
+            Toast.makeText(requireContext(), "Please enter a valid month (1-12)", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        if (!isValidDate(day, month, year)) {
+            Toast.makeText(requireContext(), "Please enter a valid date", Toast.LENGTH_SHORT).show()
+            return
+        }
+
         val birthDate = LocalDate.of(year, month, day)
         val currentDate = LocalDate.now()
         val period = Period.between(birthDate, currentDate)
@@ -64,6 +72,16 @@ class FirstFragment : Fragment() {
         binding.numeroanys.text = period.years.toString()
         binding.mesesnumero.text = period.months.toString()
         binding.diasnumero.text = period.days.toString()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun isValidDate(day: Int, month: Int, year: Int): Boolean {
+        return try {
+            LocalDate.of(year, month, day)
+            true
+        } catch (e: Exception) {
+            false
+        }
     }
 
 

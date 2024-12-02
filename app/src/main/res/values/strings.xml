@@ -44,11 +44,15 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 
-    <string name="edadintroducir">Introducir una edad</string>
+    <string name="edadintroducir">Introducir una fecha</string>
     <string name="calculadora">Calculadora de edad</string>
     <string name="dia">Día</string>
     <string name="mes">Mes</string>
     <string name="año">Año</string>
+    <string name="hanpasado">Han pasado</string>
+    <string name="añospasados">Años pasados</string>
+    <string name="mesespasados">Meses pasados</string>
+    <string name="diaspasados">Días pasados</string>
 
     <string name="bottom_button_description">Bottom button</string>
 </resources>

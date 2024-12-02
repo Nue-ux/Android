@@ -42,8 +42,8 @@
 
         <EditText
             android:id="@+id/editTextDay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:ems="2"
             android:inputType="number"
             android:hint="@string/dia"
@@ -51,8 +51,8 @@
 
         <EditText
             android:id="@+id/editTextMonth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:ems="2"
             android:inputType="number"
             android:hint="@string/mes"
@@ -60,8 +60,8 @@
 
         <EditText
             android:id="@+id/editTextYear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:ems="4"
             android:inputType="number"
             android:hint="@string/año"
@@ -70,13 +70,95 @@
 
     <ImageButton
         android:id="@+id/bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="93dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="@string/bottom_button_description"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom"
+        app:layout_constraintVertical_bias="0.106">
+
+        <TextView
+            android:id="@+id/hanpasado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_columnSpan="2"
+            android:text="@string/hanpasado"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/anyspasados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/añospasados"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/diaspasados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="@string/diaspasados"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mesespasados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="@string/mesespasados"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/numeroanys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/diasnumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mesesnumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="0"
+            android:textColor="@color/black" />
+
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

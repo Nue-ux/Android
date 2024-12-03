@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edadintroducir">Introduïu una data</string>
+    <string name="calculadora">Calculadora de edat</string>
+    <string name="dia">Dia</string>
+    <string name="mes">Mes</string>
+    <string name="año">Any</string>
+    <string name="hanpasado">Han passat</string>
+    <string name="añospasados">Anys passats</string>
+    <string name="mesespasados">Mesos passats</string>
+    <string name="diaspasados">Dies passats</string>
+    <string name="button_text">Calcular Temps</string>
+
+    <string name="bottom_button_description">Calcular</string>
+</resources>

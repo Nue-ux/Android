@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edadintroducir">Enter a date</string>
+    <string name="calculadora">Age Calculator</string>
+    <string name="dia">Day</string>
+    <string name="mes">Month</string>
+    <string name="año">Year</string>
+    <string name="hanpasado">Time has passed</string>
+    <string name="añospasados">Years passed</string>
+    <string name="mesespasados">Months passed</string>
+    <string name="diaspasados">Days passed</string>
+    <string name="button_text">Calculate Time</string>
+
+    <string name="bottom_button_description">Calculate</string>
+</resources>
